@@ -1,0 +1,21 @@
+"""
+For a game where there are 5 disks,
+write down the Facts and Rules to model the game state where 
+disk1 and disk2 (the smallest two) are on peg3, and
+other disks are on peg1.
+
+        |            |            |
+        |            |            |
+        |            |            |
+        |            |            |
+     ---|--- disk3   |            |
+    ----|----        |           -|- disk1
+   -----|----- disk5 |          --|-- disk2
+==========================================
+       peg1         peg2         peg3
+       
+Example: 
+fact: (pred obj1 obj2)
+rule: ((pred obj1 obj2) (pred obj2 obj3)) -> (pred obj1 obj3)
+
+"""
