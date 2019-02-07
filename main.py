@@ -123,7 +123,7 @@ class KBTest(unittest.TestCase):
         self.checkKb(th.kb, required, forbidden)
 
     def test07(self):
-        th = TowerOfHanoiGame()
+        th = Puzzle8Game()
         th.read('puzzle8_top_right_empty.txt')
         expectedMovables = [
             'fact: (movable tile4 pos2 pos1 pos3 pos1)',
@@ -152,7 +152,7 @@ class KBTest(unittest.TestCase):
         self.checkKb(p8.kb, required, forbidden)
 
     def test09(self):
-        th = TowerOfHanoiGame()
+        th = Puzzle8Game()
         th.read('puzzle8_center_empty.txt')
         expectedMovables = [
             'fact: (movable tile2 pos2 pos1 pos2 pos2)',
